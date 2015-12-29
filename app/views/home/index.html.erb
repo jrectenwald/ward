@@ -1,14 +1,21 @@
 <div class="jumbotron" id="home-background-image">
   <h3 class="home-jumbotron-text">Erin Ward</h3>
   <p class="home-jumbotron-text">Health | Wellness | Evolution</p>
-</div class="container-fluid">
-
-<div>
-  
-</div class="container-fluid">
-<div>
-  
 </div>
+
+<div class="container" id="home-blog">
+  <div class="container">
+    <% @posts.each do |post| %>
+      <div class="row">
+        <div class="col-xs-8 post-wrapper col-xs-offset-2">
+          <h3 class="title"> <%= link_to post.title, post %> </h3>
+          <p class="body"> <%= post.body %> </p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+  
 <div class="container-fluid">
   
 </div>

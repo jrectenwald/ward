@@ -1,12 +1,10 @@
-<% @posts.each do |post| %>
-  <div class="row">
-    <div class="post_wrapper">
-      <div class="col-xs-2" ></div>
-      <div class="col-xs-8" >
+<div id="blog">
+  <% @posts.each do |post| %>
+    <div class="row">
+      <div class="col-xs-8 post-wrapper col-xs-offset-2">
         <h3 class="title"> <%= link_to post.title, post %> </h3>
         <p class="body"> <%= post.body %> </p>
       </div>
-      <div class="col-xs-2" ></div>
     </div>
-  </div>
-<% end %>
+  <% end %>
+</div>

@@ -14,10 +14,29 @@
   margin-bottom: 0px;
 }
 
-.title {
-  text-align: center
+#blog > div > div > h3 > a {
+  text-align: center;
+  color: black;
 }
 
 .body {
-  text-align: center
+  text-align: center;
+  color: black;
+}
+
+div.col-xs-8.post-wrapper {
+  background:rgba(256,256,256,0.8);
+  margin-top: 10px;
+}
+
+#blog {
+  opacity : 0.7;
+  background-size: cover;
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/b6/37/41/b63741078b4619230b11883979f06b33.gif');
+}
+
+#home-blog {
+  height:800px;
+  background-color: red;
+  margin-top: 500px;
 }
